@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "150a8bcc-b4f3-4a29-9f14-e86465b8e8aa",
+		"name": "clould",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Clear Ports",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8090/clear",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"clear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Ports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8090/",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Add Port",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"port\": 3003\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Reserve Port",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serviceType\": \"service\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/reserve",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"reserve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Free port",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"port\": 3004\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/free",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"free"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
